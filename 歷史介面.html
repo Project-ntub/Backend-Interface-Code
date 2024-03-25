@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>歷史紀錄</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="menu.css">
+    
+    <style>
+        /* 全局樣式 */
+        *{
+            min-width: auto;
+            max-width: auto;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0b2;
+
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+
+        }
+        h1 {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+            margin: 0;
+            padding: 30px 0px;
+        }
+
+        /* 搜尋框樣式 */
+        .search-box {
+            margin-top: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+
+        }
+        .search-box input[type="text"] {
+            padding: 10px 20px;
+            width: 200px;
+        }
+        .search-box input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 10px;
+
+        }
+        /* 頁面間距 */
+        p {
+            margin-top: 20px;
+        }
+        /* 圖示大小和位置 */
+        .fa-home {
+            font-size: 2.5em; /* 設置圖示大小*/
+            position: fixed; /* 使用 fixed 定位 */
+            top: 30px; /* 距離頂部  */
+            right: 30px; /* 距離右側 */
+            color: aliceblue;
+            cursor: pointer;
+        }
+
+        
+        form {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 頁首標題 -->
+
+        <h1>歷史紀錄</h1>
+     <!-- 搜尋框 -->
+    </div>
+   
+    <div class="search-box">
+        <form action="#">
+            <input type="text" placeholder="搜尋...">
+            <input type="submit" value="搜尋">
+        </form>
+    </div>
+    <!-- 回首頁連結 -->
+    <a href="#" class="fa fa-home"></a>
+
+    </div>
+    <!-- 選單 -->
+
+    <script src="scripts/main.js"></script>
+    <div class="sidebar">
+        <button class="burger" onclick="toggleMenu()"></button>
+        <div class="menu">
+            <nav>
+                <a href="dashboard.html" style="animation-delay: 0,2s;">儀表板管理</a>
+                <br>
+                <a href="#" style="animation-delay: 0,3s;">用戶管理</a>
+                <br>
+                <a href="#" style="animation-delay: 0,4s;">角色管理</a>
+                <br>
+                <a href="#" style="animation-delay: 0,5s;">歷史紀錄</a>
+            </nav>
+        </div>
+        
+      </div>
+    <div class="new-block">
+        <div class="container">
+            <div class="btn-group">
+                <button class="btn-blue">新增用戶</button>
+                <button>排序：最新</button>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>帳號</th>
+                        <th>姓名</th>
+                        <th>電子郵件</th>
+                        <th>部門</th>
+                        <th>建立時間</th>
+                        <th>最近登入時間</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>123</td>
+                        <td>王店長</td>
+                        <td>wang@gmail.com</td>
+                        <td>行銷</td>
+                        <td>2020/12/12/15:28</td>
+                        <td>2023/12/25/17:21</td>
+                        <td>登入系統</td>
+                    </tr>
+                    <tr>
+                        <td>456</td>
+                        <td>李店長</td>
+                        <td>lee@gmail.com</td>
+                        <td>財務</td>
+                        <td>2021/4/16/01:14</td>
+                        <td>2022/5/07/03:48</td>
+                        <td>修改個人資料</td>
+                    </tr>
+                    <tr>
+                        <td>789</td>
+                        <td>謝店長</td>
+                        <td>hsieh@gmail.com</td>
+                        <td>營運</td>
+                        <td>2020/10/12/17:28</td>
+                        <td>2023/06/13/20:32</td>
+                        <td>新增圖表</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
